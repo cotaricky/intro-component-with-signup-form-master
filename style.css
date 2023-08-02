@@ -1,0 +1,138 @@
+:root {
+  --primary-red: hsl(0, 100%, 74%);
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --neutral-dark-blue: hsl(249, 10%, 26%);
+  --neutral-gray-blue: hsl(246, 25%, 77%);
+  --fs-body: 1rem;
+  --fs-title: 1.5rem;
+  --fs-title-desktop: 3rem;
+  --fs-small: 0.75rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Poppins", sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+section {
+  max-width: 100%;
+  width: 50%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url("images/bg-intro-mobile.png");
+  background-color: var(--primary-red);
+}
+
+.title {
+  font-size: var(--fs-title);
+  font-weight: 700;
+  color: white;
+}
+
+.subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: white;
+}
+
+.card-left {
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1440px;
+    align-content: center;
+    margin-inline: auto;
+  }
+
+  .card-left {
+    text-align: left;
+    padding: 2rem;
+  }
+
+  .card-right {
+    padding: 2rem;
+  }
+
+  .title {
+    font-size: var(--fs-title-desktop);
+    line-height: 1.1;
+    padding-bottom: 2rem;
+  }
+}
+
+.text-sm {
+  font-size: var(--fs-small);
+  text-align: center;
+  color: var(--neutral-gray-blue);
+}
+
+.form-container {
+  background-color: white;
+  padding: 2.5rem;
+  border: none;
+  border-radius: 10px;
+}
+
+a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--primary-red);
+}
+
+.card-right {
+  display: flex;
+  flex-direction: column;
+}
