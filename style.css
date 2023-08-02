@@ -83,34 +83,7 @@ main {
   color: white;
 }
 
-.card-left {
-  text-align: center;
-}
-
 @media (min-width: 640px) {
-  main {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1440px;
-    align-content: center;
-    margin-inline: auto;
-  }
-
-  .card-left {
-    text-align: left;
-    padding: 2rem;
-  }
-
-  .card-right {
-    padding: 2rem;
-  }
-
-  .title {
-    font-size: var(--fs-title-desktop);
-    line-height: 1.1;
-    padding-bottom: 2rem;
-  }
 }
 
 .text-sm {
@@ -130,9 +103,4 @@ a {
   font-weight: 700;
   text-decoration: none;
   color: var(--primary-red);
-}
-
-.card-right {
-  display: flex;
-  flex-direction: column;
 }
